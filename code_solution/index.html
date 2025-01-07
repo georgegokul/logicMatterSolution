@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Application</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Student Details Filtering and Sorting App</h1>
+    <div id="controls">
+        <label for="subject">Select Subject:</label>
+        <select id="subject">
+            <option value="English">English</option>
+            <option value="Maths">Maths</option>
+            <option value="Science">Science</option>
+            <option value="SocialScience">Social Science</option>
+        </select>
+        <div>
+            <label><input type="radio" name="filter" value="Above" checked> Above</label>
+            <label><input type="radio" name="filter" value="Below"> Below</label>
+            <label><input type="radio" name="filter" value="Between"> Between</label>
+        </div>
+        <input type="number" id="filterValue1" placeholder="Value 1">
+        <input type="number" id="filterValue2" placeholder="Value 2" style="display: none;">
+        <button id="filter">Filter</button>
+        <button id="clear">Clear</button>
+    </div>
+    <table id="studentTable">
+        <thead>
+            <tr>
+                <th data-column="id">S.No</th>
+                <th data-column="name">Name</th>
+                <th data-column="English">English</th>
+                <th data-column="Maths">Maths</th>
+                <th data-column="Science">Science</th>
+                <th data-column="SocialScience">Social Science</th>
+            </tr>
+        </thead>
+        <tbody>
+ 
+        </tbody>
+    </table>
+    <div id="pagination" style="text-align: center; margin: 20px 0;"></div>
+    <script src="script.js"></script>
+</body>
+</html>

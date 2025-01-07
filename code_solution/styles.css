@@ -1,0 +1,134 @@
+body {
+    font-family: monospace, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f8ff;
+    color: #333; 
+    line-height: 1.6;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 20px;
+    color: #2c3e50;
+}
+
+#controls {
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #ffffff; 
+    border: 1px solid #dcdfe3; 
+    border-radius: 8px;
+    width: 90%;
+    max-width: 600px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05); 
+
+}
+
+#controls label {
+    font-weight: bold;
+    margin-right: 10px;
+    color: #34495e; 
+}
+
+#controls select, #controls input, #controls button {
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    font-size: 14px;
+    background-color: #f9fafb;
+}
+
+#controls button {
+    background-color: #1abc9c; 
+    color: #ffffff;
+    cursor: pointer;
+    border: none;
+    font-weight: bold;
+}
+
+#controls button:hover {
+    background-color: #16a085; 
+}
+
+/* Table Styles */
+table {
+    width: 90%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background-color: #ffffff; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05); 
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+th, td {
+    padding: 12px 15px;
+    text-align: left;
+    border: 1px solid #e0e4e8;
+    text-align: center; 
+}
+
+th {
+    background-color: #3498db; 
+    color: #ffffff; 
+    cursor: pointer;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+th:hover {
+    background-color: #2980b9; 
+}
+
+tr:hover {
+    background-color: #f1f2f4; 
+    transition: background-color 0.5s;
+}
+
+#pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    font-size: 16px;
+    color: #333;
+}
+
+#pagination button {
+    padding: 8px 12px;
+    border: 1px solid #007bff;
+    background-color: #ffffff;
+    color: #007bff;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+#pagination button:disabled {
+    color: #ccc;
+    border-color: #ccc;
+    cursor: not-allowed;
+}
+
+#pagination button:hover:not(:disabled) {
+    background-color: #007bff;
+    color: #ffffff;
+}
+
+
+.highlight {
+    background-color: rgb(248, 233, 159) !important;
+    font-weight: bold;
+}
+
+@media (max-width: 600px) {
+    table {
+        font-size: 14px;
+    }
+
+    #controls {
+        width: 95%;
+        padding: 15px;
+    }
+}
